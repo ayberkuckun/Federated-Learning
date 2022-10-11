@@ -1,9 +1,0 @@
-
-Couldn't find processed data. Processing...
-Epsilon: 0.15
-Example No: 0 Label: 53
-Traceback (most recent call last):
-  File "/home/ayberk/PycharmProjects/FederatedFP/model_training.py", line 152, in <module>
-    weights_sur.assign_weights_to(surrogate_models[i])
-  File "/home/ayberk/PycharmProjects/FederatedFP/fingerprinting.py", line 102, in fingerprinting
-    ensemble_output = surrogate_prediction * (tf.ones_like(reference_prediction) - reference_prediction)
