@@ -1,0 +1,26 @@
+
+Couldn't find processed data. Processing...
+Traceback (most recent call last):
+  File "/home/ayberk/PycharmProjects/FederatedFP/venv/lib/python3.9/site-packages/IPython/core/interactiveshell.py", line 3378, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "<ipython-input-2-f4ef74add26f>", line 1, in <module>
+    runfile('/home/ayberk/PycharmProjects/FederatedFP/model_training.py', wdir='/home/ayberk/PycharmProjects/FederatedFP')
+  File "/opt/pycharm-2022.2.2/plugins/python/helpers/pydev/_pydev_bundle/pydev_umd.py", line 198, in runfile
+    pydev_imports.execfile(filename, global_vars, local_vars)  # execute the script
+  File "/opt/pycharm-2022.2.2/plugins/python/helpers/pydev/_pydev_imps/_pydev_execfile.py", line 18, in execfile
+    exec(compile(contents+"\n", file, 'exec'), glob, loc)
+  File "/home/ayberk/PycharmProjects/FederatedFP/model_training.py", line 152, in <module>
+    fingerprinting.fingerprinting(source_model, reference_models, surrogate_models, dataset="cifar10", model="ResNet20v1", surrogate_no=1, reference_no=1)
+  File "/home/ayberk/PycharmProjects/FederatedFP/fingerprinting.py", line 102, in fingerprinting
+    first_loss = alpha * tf.reshape(tf.keras.losses.categorical_crossentropy([1.0, 0.0], [ensemble_output[tf.argmax(source_prediction)], 1.0 - ensemble_output[tf.argmax(source_prediction)]]), ())
+  File "/home/ayberk/PycharmProjects/FederatedFP/venv/lib/python3.9/site-packages/tensorflow/python/util/traceback_utils.py", line 153, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "/home/ayberk/PycharmProjects/FederatedFP/venv/lib/python3.9/site-packages/tensorflow/python/ops/array_ops.py", line 907, in _check_index
+    raise TypeError(_SLICE_TYPE_ERROR + ", got {!r}".format(idx))
+TypeError: Only integers, slices (`:`), ellipsis (`...`), tf.newaxis (`None`) and scalar tf.int32/tf.int64 tensors are valid indices, got <tf.Tensor: shape=(100,), dtype=int64, numpy=
+array([0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0,
+       0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0])>
+Epsilon: 0.15

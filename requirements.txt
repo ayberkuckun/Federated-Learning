@@ -1,0 +1,5 @@
+tensorflow-federated==0.33.0
+matplotlib==3.5.3
+wandb
+tensorflow==2.9.2
+tensorflow-probability==0.17.0
